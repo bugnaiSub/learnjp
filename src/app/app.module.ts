@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { NgModule } from '@angular/core';
+import { PapaParseModule } from 'ngx-papaparse';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +11,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PapaParseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
